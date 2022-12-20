@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700");
+@import 'crazy.css';
+.tlt {
+  visibility: hidden;
+}
+body {
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #393939;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out, background-color 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #0de7cb;
+  text-decoration: none;
+}
+.mb40 {
+  margin-bottom: 40px;
+}
+.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: #020033;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 70px;
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  border: 3px solid #020033;
+}
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+.btn::after {
+  content: '';
+  background-color: #020033;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.btn:hover::after {
+  height: 100%;
+}
+.btn-white {
+  color: #fff;
+}
+.btn-white:hover {
+  color: #fff;
+}
+.btn:focus {
+  outline: none;
+}
+@media (max-width: 480px) {
+  .btn {
+    padding: 12px 40px;
+  }
+}
+.demo-content {
+  padding: 100px 0;
+}
+.section-title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #171717;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.section-title em {
+  font-size: 18px;
+  color: #171717;
+}
+.text-center {
+  text-align: center;
+}
+.page-title {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.page-title h1 {
+  font-size: 60px;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-family: 'Archivo Black', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+.page-title h1::before,
+.page-title h1::after {
+  content: '\e870';
+  position: absolute;
+  font-family: 'Linearicons-Free';
+  top: 0;
+  font-size: 16px;
+}
+.page-title h1::before {
+  left: -46px;
+}
+.page-title h1::after {
+  right: -46px;
+}
+.page-title p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.jarallax {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(2,0,51,0.85);
+}
+.overlay ~ .container {
+  position: relative;
+  z-index: 5;
+}
+.crazy-loading {
+  background-color: transparent;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-top: 3px solid #020033;
+  animation: fa-spin 2s infinite linear;
+}
+.demo-page {
+  display: block;
+  position: relative;
+  color: #171717;
+}
+.demo-page-title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.demo-page-image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-top: 110%;
+  border: 8px solid #0de7cb;
+}
+.demo-page-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.features {
+  text-align: center;
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+}
+.features .feature-item .item-head {
+  position: relative;
+  display: block;
+}
+.features .feature-item .item-head i {
+  font-size: 43px;
+}
+.features .feature-item h6 {
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding: 0;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .feature-item {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .feature-item .item-head::after {
+    content: '\e870';
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    right: 0;
+    margin-right: -25px;
+    margin-top: -8px;
+    font-family: 'Linearicons-Free';
+  }
+  .feature-item:last-child .item-head::after {
+    display: none;
+  }
+}
+footer {
+  padding: 55px 0;
+  text-align: center;
+}
+footer .footer-copy p {
+  font-size: 16px;
+  color: #171717;
+}
