@@ -63,11 +63,13 @@
 
 					<div class="crazy-border"></div>
 
+					<div style="height: 100px;">
 					<div class="crazy-logo">
 						<a href="">
                             <?php the_custom_logo() ?>
                         </a>
 					</div>
+</div>
 					<!-- End crazy-logo -->
 
 					<?php get_sidebar() ?>
