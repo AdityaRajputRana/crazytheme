@@ -8,8 +8,8 @@ add_filter( 'wp_nav_menu', 'remove_ul' );
 
 function crazy_theme_setup(){
     add_theme_support('custom-logo', array(
-        'width' => 180,
-        'height' => 180,
+        'width' => 90,
+        'height' => 60,
     ));
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');

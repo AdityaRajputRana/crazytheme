@@ -3,7 +3,7 @@
 	
 <!-- Mirrored from unvab.com/crazy_html/index_one.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Dec 2022 06:24:45 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
+<head style= "color: #78a8eb">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="">
@@ -63,13 +63,13 @@
 
 					<div class="crazy-border"></div>
 
-					<div style="height: 100px;">
+				
 					<div class="crazy-logo">
 						<a href="">
                             <?php the_custom_logo() ?>
                         </a>
 					</div>
-</div>
+					
 					<!-- End crazy-logo -->
 
 					<?php get_sidebar() ?>

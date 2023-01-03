@@ -276,7 +276,7 @@
 
 				<section
 					class="video-section jarallax pt150 pb150"
-					style="background-image: url(<?php echo get_field('videoBgImg') ?>">
+					style="background-image: url(<?php echo get_field('VideoBgImg'); ?>);">
 					<div class="overlay"></div>
 					<div class="container">
 						<div class="row">
